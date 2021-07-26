@@ -3,6 +3,14 @@
     src: url(../../.local/share/fonts/Roboto-Light.ttf);
 }
 
+/* main */
+
+.weather {
+    position: relative;
+    top: 3em;
+    z-index: 1;
+}
+
 /* header */
 
 header {
@@ -14,26 +22,18 @@ header {
     z-index: 2;
 }
 
-/* main */
-
-main {
-    position: relative;
-    top: 3em;
-    z-index: 1;
-}
-
 /* main current-weather */
 
-main .current-weather .data {
+.weather .current-weather .data {
     height: 20em;
 }
 
-main .current-weather .data .degrees {
+.weather .current-weather .data .degrees {
     font-size: 6em;
     font-family: 'Roboto-Light', sans-serif;
 }
 
-main .current-weather .last-update {
+.weather .current-weather .last-update {
     position: relative;
     bottom: .5em;
     right: 0;
@@ -42,7 +42,7 @@ main .current-weather .last-update {
 
 /* main .next-hours */
 
-main .next-hours {
+.weather .next-hours {
     height: 8em;
     padding-bottom: .5em;
     overflow-x: scroll;
@@ -50,12 +50,12 @@ main .next-hours {
     white-space: nowrap;
 }
 
-main .next-hours .hour {
+.weather .next-hours .hour {
     display: inline-block;
     width: 15.4%;
 }
 
-main .next-hours .hour div {
+.weather .next-hours .hour div {
     padding-top: .7em;
     padding-bottom: .7em;
     height: 8em;
@@ -65,17 +65,19 @@ main .next-hours .hour div {
     align-items: center;
 }
 
-main .next-hours .hour .time {
+.weather .next-hours .hour .time {
     font-size: .67em;
 }
 
-main .next-days .day {
+.weather .next-days .day {
     padding-top: .5em;
     padding-bottom: .5em;
     display: flex;
     justify-content: space-between;
 }
 
-main .comfort .name, main .wind .name {
+.weather .comfort .name, main .wind .name {
     font-size: .8em;
 }
+
+/* settings */
