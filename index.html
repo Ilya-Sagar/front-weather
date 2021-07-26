@@ -12,7 +12,7 @@
 
 <body>
     <main class="main-page ps-3 pe-3">
-        <header class="ps-3 pe-3 d-flex justify-content-between align-items-center">
+        <header class="ps-3 pe-3 d-flex justify-content-between align-items-center border-bottom border-light">
             <div class="search-sities">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
@@ -33,7 +33,7 @@
         </header>
 
         <main class="weather">
-            <section class="current-weather border-bottom border-dark">
+            <section class="current-weather border-bottom border-light">
                 <div class="data d-flex flex-column align-items-center justify-content-center">
                     <span class="degrees">21</span>
                     <span class="description">Солнечно</span>
@@ -41,7 +41,7 @@
                 <span class="last-update">обновлено 13 мин назад</span>
             </section>
 
-            <section class="next-hours border-bottom border-dark">
+            <section class="next-hours border-bottom border-light">
                 <div class="hour">
                     <div class="hour-now">
                         <span class="time">Сейчас</span>
@@ -59,7 +59,7 @@
             </section>
 
             <section class="next-days">
-                <div class="day border-bottom border-dark pt-2 pb-2">
+                <div class="day border-bottom border-light pt-2 pb-2">
                     <span class="date">Завтра, 27 июля</span>
                     <div class="pic">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -70,7 +70,7 @@
                     </div>
                     <span class="degrees">27&deg;/18&deg;</span>
                 </div>
-                <div class="day border-bottom border-dark pt-2 pb-2">
+                <div class="day border-bottom border-light pt-2 pb-2">
                     <span class="date">Ср, 27 июля</span>
                     <div class="pic">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -81,7 +81,7 @@
                     </div>
                     <span class="degrees">27&deg;/18&deg;</span>
                 </div>
-                <div class="day border-bottom border-dark pt-2 pb-2">
+                <div class="day border-bottom border-light pt-2 pb-2">
                     <span class="date">Чт, 27 июля</span>
                     <div class="pic">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -92,7 +92,7 @@
                     </div>
                     <span class="degrees">27&deg;/18&deg;</span>
                 </div>
-                <div class="day border-bottom border-dark pt-2 pb-2">
+                <div class="day border-bottom border-light pt-2 pb-2">
                     <span class="date">Пт, 27 июля</span>
                     <div class="pic">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -105,7 +105,7 @@
                 </div>
             </section>
 
-            <section class="comfort border-bottom border-dark">
+            <section class="comfort border-bottom border-light">
                 <span class="name">Комфорт</span>
                 <div class="content pt-3 pb-3">
                     <div class="feels-like pb-1">
@@ -128,7 +128,7 @@
                 </div>
             </section>
 
-            <section class="wind border-bottom border-dark">
+            <section class="wind border-bottom border-light">
                 <span class="name">Ветер</span>
                 <div class="content pt-3 pb-3 d-flex justify-content-between pt-2">
                     <div class="pic">
@@ -153,7 +153,7 @@
         </main>
     </main>
     <section class="settings ps-3 pe-3">
-        <header class="ps-3 pe-3 d-flex justify-content-between align-items-center border-bottom border-dark">
+        <header class="ps-3 pe-3 d-flex justify-content-between align-items-center border-bottom border-light">
             <div class="return-to-main" onclick="closeSettings()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-return-left" viewBox="0 0 16 16">
@@ -172,8 +172,8 @@
             </select>
         </div>
     </section>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="bootstrap/js/bootstrap.js"></script>
-<script src="main.js"></script>
 
 </html>

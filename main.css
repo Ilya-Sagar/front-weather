@@ -5,6 +5,7 @@
 
 html, body {
     height: 100%;
+    color: white;
 }
 
 /* header */
@@ -12,13 +13,19 @@ html, body {
 header {
     height: 3em;
     position: fixed;
-    background-color: white;
+    background-color: inherit;
     left: 0;
     right: 0;
     z-index: 2;
+    background: linear-gradient(90deg, #0652D0, #4F8AEA), no-repeat;
 }
 
 /* main */
+
+.main-page {
+    padding-bottom: 3em;
+    background: linear-gradient(100deg, #0652D0, #4F8AEA), no-repeat;
+}
 
 .weather {
     position: relative;
@@ -93,7 +100,7 @@ header {
     left: 100%;
     height: 100%;
     width: 100%;
-    background-color: inherit;
+    background: linear-gradient(100deg, #0652D0, #4F8AEA), no-repeat;
     z-index: 3;
 }
 
