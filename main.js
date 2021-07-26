@@ -1,3 +1,14 @@
+function openSettings() {
+    let settings = document.querySelector('.settings')
+    settings.classList.add('settings-active')
+}
+
+function closeSettings() {
+    let settings = document.querySelector('.settings')
+    settings.classList.remove('settings-active')
+}
+
+
 function makeHoursWeather() {
     let hours_weather = document.querySelector('.next-hours')
     let hour_weather = document.querySelector('.hour')

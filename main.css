@@ -3,12 +3,8 @@
     src: url(../../.local/share/fonts/Roboto-Light.ttf);
 }
 
-/* main */
-
-.weather {
-    position: relative;
-    top: 3em;
-    z-index: 1;
+html, body {
+    height: 100%;
 }
 
 /* header */
@@ -20,6 +16,14 @@ header {
     left: 0;
     right: 0;
     z-index: 2;
+}
+
+/* main */
+
+.weather {
+    position: relative;
+    top: 3em;
+    z-index: 1;
 }
 
 /* main current-weather */
@@ -81,3 +85,26 @@ header {
 }
 
 /* settings */
+
+.settings {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    z-index: 3;
+}
+
+.settings .measure {
+    position: relative;
+    top: 3em;
+}
+
+/* settings actions */
+
+.settings-active {
+    display: block;
+    left: 0;
+}
