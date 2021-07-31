@@ -13,7 +13,7 @@
 <body>
     <main class="main-page ps-3 pe-3">
         <header class="ps-3 pe-3 d-flex justify-content-between align-items-center border-bottom border-light">
-            <div class="search-sities">
+            <div class="search-sities" onclick="openSearch()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
                     <path
@@ -128,7 +128,7 @@
                 </div>
             </section>
 
-            <section class="wind border-bottom border-light">
+            <section class="wind">
                 <span class="name">Ветер</span>
                 <div class="content pt-3 pb-3 d-flex justify-content-between pt-2">
                     <div class="pic">
@@ -152,7 +152,7 @@
             </section>
         </main>
     </main>
-    <section class="settings ps-3 pe-3">
+    <section class="settings ps-3 pe-3 d-none">
         <header class="ps-3 pe-3 d-flex justify-content-between align-items-center border-bottom border-light">
             <div class="return-to-main" onclick="closeSettings()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -170,6 +170,34 @@
                 <option value="celsius">C&deg;</option>
                 <option value="fahrenheit">F&deg;</option>
             </select>
+        </div>
+    </section>
+    <section class="search ps-3 pe-3 d-none">
+        <header class="ps-3 pe-3 d-flex justify-content-between align-items-center border-bottom border-light">
+            <div class="return-to-main" onclick="closeSearch()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
+                </svg>
+            </div>
+            <input type="text" placeholder="Город">
+            <div></div>
+        </header>
+
+        <div class="sities-list">
+            <div class="d-flex justify-content-between sity border-bottom botder-light pt-3 pb-3">
+                <span class="sity-name">Москва</span>
+                <span class="timezone">UTC + 3</span>
+            </div>
+            <div class="d-flex justify-content-between sity border-bottom botder-light pt-3 pb-3">
+                <span class="sity-name">Москва</span>
+                <span class="timezone">UTC + 3</span>
+            </div>
+            <div class="d-flex justify-content-between sity border-bottom botder-light pt-3 pb-3">
+                <span class="sity-name">Москва</span>
+                <span class="timezone">UTC + 3</span>
+            </div>
         </div>
     </section>
     <script src="bootstrap/js/bootstrap.js"></script>

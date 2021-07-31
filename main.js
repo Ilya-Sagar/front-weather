@@ -1,11 +1,30 @@
 function openSettings() {
     let settings = document.querySelector('.settings')
-    settings.classList.add('settings-active')
+    let main = document.querySelector('.main-page')
+    settings.classList.remove('d-none')
+    main.classList.add('d-none')
+    
 }
 
 function closeSettings() {
     let settings = document.querySelector('.settings')
-    settings.classList.remove('settings-active')
+    let main = document.querySelector('.main-page')
+    settings.classList.add('d-none')
+    main.classList.remove('d-none')
+}
+
+function openSearch() {
+    let search = document.querySelector('.search')
+    let main = document.querySelector('.main-page')
+    search.classList.remove('d-none')
+    main.classList.add('d-none')
+}
+
+function closeSearch() {
+    let search = document.querySelector('.search')
+    let main = document.querySelector('.main-page')
+    search.classList.add('d-none')
+    main.classList.remove('d-none')
 }
 
 
